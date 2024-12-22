@@ -43,6 +43,7 @@ fn main() {
             .append_property(
                 Property::new("X-APPLE-STRUCTURED-LOCATION", "geo:60.366941,5.357363")
                     .add_parameter("X-TITLE", "Brann stadion")
+                    .add_parameter("X-APPLE-RADIUS", "300.0")
                     .done()
             )
             .done()
