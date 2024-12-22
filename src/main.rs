@@ -5,6 +5,7 @@ use chrono::{Duration, NaiveDate, NaiveTime, Utc};
 
 fn main() {
     let venue = Venue::new()
+        .uid("b0ab13d5-6298-4d46-835a-acbc4a24bee6")
         .street_address("Kniksens plass 1")
         .postal_code("5063")
         // .extended_address("5063 Bergen")
@@ -12,6 +13,7 @@ fn main() {
         .region("Vestland")
         .country("Norge")
         .done();
+
     let my_calendar = Calendar::new()
         .name("example calendar")
         .push(
@@ -35,8 +37,9 @@ fn main() {
             .summary("Brann—PAOK")
             .starts(Utc::now() + Duration::days(1))
             .ends(Utc::now() + Duration::days(1) + Duration::hours(2))
-            .status(EventStatus::Confirmed)
+            .venue("Brann stadion", venue.get_uid().unwrap())
             .append_component(venue)
+            .status(EventStatus::Confirmed)
             .done()
         )
         .done();
