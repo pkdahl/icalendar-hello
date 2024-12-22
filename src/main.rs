@@ -35,10 +35,16 @@ fn main() {
         .push(
             Event::new()
             .summary("Brann—PAOK")
+            .description("This is a description.")
             .starts(Utc::now() + Duration::days(1))
             .ends(Utc::now() + Duration::days(1) + Duration::hours(2))
             .status(EventStatus::Confirmed)
-            .location("Brann stadion\nKniksens plass 1\n5063 Bergen\nNorge")
+            .location("Brann stadion")
+            .append_property(
+                Property::new("X-APPLE-STRUCTURED-LOCATION", "geo:60.366941,5.357363")
+                    .add_parameter("X-TITLE", "Brann stadion")
+                    .done()
+            )
             .done()
         )
         .done();
