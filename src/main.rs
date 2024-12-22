@@ -44,7 +44,7 @@ fn main() {
                 Property::new("X-APPLE-STRUCTURED-LOCATION", "geo:60.366941,5.357363")
                     .add_parameter("VALUE", "URI")
                     .add_parameter("X-APPLE-MAPKIT-HANDLE", "CAESiAIIrk0Qu+aas87c9sj2ARoSCY1J2uj3Lk5AEVs6i4PwbRVAIl0KBk5vcndheRICTk8aCUhvcmRhbGFuZDIGQmVyZ2VuOgQ1MDYzUg5Lbmlrc2VucyBQbGFzc1oBMWIQS25pa3NlbnMgUGxhc3MgMYoBBkJlcmdlbooBB8OFcnN0YWQqDUJyYW5uIFN0YWRpb24yEEtuaWtzZW5zIFBsYXNzIDEyCzUwNjMgQmVyZ2VuMgVOb3JnZTgvWk4KJQi75pqzztz2yPYBEhIJjUna6PcuTkARWzqLg/BtFUAYrk2QAwGiHyQIu+aas87c9sj2ARoXCg1CcmFubiBTdGFkaW9uEAAqAmVuQAA=")
-                    .add_parameter("X-APPLE-RADIUS", "300.0")
+                    .add_parameter("X-APPLE-RADIUS", "271.0740051269531")
                     .add_parameter("X-APPLE-REFERENCEFRAME", "0")
                     .add_parameter("X-TITLE", "Brann stadion")
                     .done()
