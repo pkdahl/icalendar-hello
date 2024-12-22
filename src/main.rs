@@ -37,11 +37,10 @@ fn main() {
             .summary("Brann—PAOK")
             .starts(Utc::now() + Duration::days(1))
             .ends(Utc::now() + Duration::days(1) + Duration::hours(2))
-            .venue("Brann stadion", venue.get_uid().unwrap())
             .status(EventStatus::Confirmed)
+            .location("Brann stadion\nKniksens plass 1\n5063 Bergen\nNorge")
             .done()
         )
-        .push(venue)
         .done();
 
     // println!("{}", my_calendar);
