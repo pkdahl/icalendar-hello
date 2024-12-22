@@ -38,10 +38,10 @@ fn main() {
             .starts(Utc::now() + Duration::days(1))
             .ends(Utc::now() + Duration::days(1) + Duration::hours(2))
             .venue("Brann stadion", venue.get_uid().unwrap())
-            .append_component(venue)
             .status(EventStatus::Confirmed)
             .done()
         )
+        .push(venue)
         .done();
 
     // println!("{}", my_calendar);
