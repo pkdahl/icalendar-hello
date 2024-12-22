@@ -42,7 +42,9 @@ fn main() {
             .location("Brann stadion")
             .append_property(
                 Property::new("X-APPLE-STRUCTURED-LOCATION", "geo:60.366941,5.357363")
+                    .add_parameter("VALUE", "URI")
                     .add_parameter("X-TITLE", "Brann stadion")
+                    .add_parameter("X-ADDRESS", "Kniksens plass 1\n5063 Bergen\nNorge")
                     .add_parameter("X-APPLE-RADIUS", "300.0")
                     .done()
             )
